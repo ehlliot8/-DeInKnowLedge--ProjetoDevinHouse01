@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/JavaScript/app.js" type="module"></script>
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Forumulário</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Diário DevinHouse Developer 🚀
+            <h2>
+            <label for="color">Escolha sua cor favorita:</label>
+            <input type="color" id="color">
+            </h2>
+        </h1>
+    </header>
+    <div id="div-esquerda">
+        <form>
+            <label for="txt-titulo">Título:</label>
+            <input id="txt-titulo" type="text" maxlength="64" minlength="8" required placeholder="Digite o titulo...">
+
+            <label for="linguagem-skill">Linguagem/Skill:</label>
+            <input id="linguagem-skill" type="text" minlength="6" maxlength="16" required placeholder="Digite a linguagem...">
+
+            <label for="select-categoria">Categoria:</label>
+            <select id="select-categoria" name="Categoria">
+                <!--FrontEnd, BackEnd, FullStack e Comportamental/Soft
+            -->
+                <option value="selecione">Selecione...</option>
+                <option value="frontEnd">FrontEnd</option>
+                <option value="backEnd">BackEnd</option>
+                <option value="fullStack">FullStack</option>
+                <option value="comportamental/soft">SoftSkill</option>
+            </select>
+
+            <label for="txt-descricao"> Descrição:</label>
+            <input id="txt-descricao" type="text" minlength="32" maxlength="512" placeholder="Digite sua descrição">
+
+            <label for="video-youtube">Vídeo do YouTube:</label>
+            <input id="video-youtube" type="url" name="" >
+
+            <button type="button" id="btn-salvar">Salvar</button>
+            <button type="button" id="btn-limpar">Limpar</button>
+
+        </form>
+    </div>
+    <div id="div-direita">
+        <input id="txt-pesquisa" type="text" placeholder="Search.." name="search">
+        <button id="btn-buscar" type="button"><i></i>Buscar...</button>
+        <button id="btn-apagar" type="button"><i></i>Resetar...</button>
+         <br>
+            Total
+        <div id="total-cards">0</div>
+            FrontEnd
+        <div id="front-cards">0</div>
+            BackEnd 
+        <div id="back-cards">0</div>
+            FullStack
+        <div id="fullstack-card">0</div>
+            SoftSkill
+        <div id="comportamentalSoftware-Card">0</div>
+        
+        <div>
+            <h1></h1>
+            <ul id="p-cards" style="list-style: none;">
+                
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>

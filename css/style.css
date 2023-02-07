@@ -1,0 +1,32 @@
+html{  
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    
+}
+body {
+    font-family: sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+#div-esquerda{
+    background-color: #9C9EFE;
+    width: 45%;
+    float: left;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+#div-direita{
+    background-color:#3B9AE1 ;
+    width: 45%;
+    float:right;
+    color: white;
+}
+#txt-pesquisa{
+    border-radius: 50px;
+}
